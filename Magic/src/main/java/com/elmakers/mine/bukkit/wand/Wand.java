@@ -5170,6 +5170,7 @@ public class Wand extends WandProperties implements CostReducer, com.elmakers.mi
             if (usesLevelDisplay) {
                 playerLevel = (int)levelDisplayMode.getValue(this);
             }
+            Bukkit.broadcastMessage("Set exp to (" + playerLevel + ", " + playerProgress + ") because (" + usesLevelDisplay + ", " + usesXPDisplay + ")");
 
             mage.sendExperience(playerProgress, playerLevel);
         }
